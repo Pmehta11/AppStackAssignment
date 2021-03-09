@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.android.appstackassignment.viewModel.ForgotViewModel"/>
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/appstack"
+            android:layout_marginTop="@dimen/_100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50dp"
+            android:hint="@string/username"
+            app:layout_constraintTop_toBottomOf="@id/logo">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="@={viewModel.email}"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnForgot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:textColor="@android:color/white"
+            android:text="@string/submit"
+            android:textSize="@dimen/_14sp"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            app:backgroundTint="@color/colorPrimary"
+            android:stateListAnimator="@null"
+            app:layout_constraintTop_toBottomOf="@id/email"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

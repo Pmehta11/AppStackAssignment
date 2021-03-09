@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AppStackAssignment</string>
+
+    <!--Strings related to Login -->
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="facebook">Facebook</string>
+    <string name="or">Or</string>
+    <string name="empty_email">Please enter email</string>
+    <string name="invalid_email">Please enter valid email</string>
+    <string name="empty_password">Please enter password</string>
+
+    <!--Strings related to Forgot -->
+    <string name="submit">Submit</string>
+    <string name="recovery_mail">Recovery link sent to your mail Id. Please set password on browser</string>
+
+    <!--Strings related to SignUp -->
+    <string name="sign_up">Sign Up</string>
+    <string name="already_sign_up">Already Sign Up? Login</string>
+
+
+    <!--Strings related to MainActivity -->
+    <string name="main_Activity">Main Activity</string>
+
+    <!--Strings related to Facebook -->
+    <string name="facebook_app_id">1095960407553886</string>
+    <string name="fb_login_protocol_scheme">fb1095960407553886</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+
+</resources>
